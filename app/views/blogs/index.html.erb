@@ -1,16 +1,18 @@
-<h1>Tweet一覧</h1>
+<h1 class="title_index">Tweet一覧</h1>
 <p><%= notice %></p>
-<table>
-  <tr>
-    <td>Tweet</td>
-  </tr>
   <% @blog.each do |blog| %>
-    <tr>
-      <td><%= blog.content %></td>
-      <td><%= link_to '詳細を開く', blog_path(blog.id)%></td>
-      <td><%= link_to '編集する', edit_blog_path(blog.id)%></td>
-      <td><%= link_to '削除する', blog_path(blog.id), method: :delete ,data:{confirm:'本当に消去してよろしいですか？'}%></td>
-    </tr>
+    <div class="content">
+      <span><%= blog.content %></span>
+    </div>
+    <br>
+    <div class="root">
+      <span><%= link_to '詳細を開く', blog_path(blog.id)%></span>
+      <span><%= link_to '編集する', edit_blog_path(blog.id)%></span>
+      <span><%= link_to '削除する', blog_path(blog.id), method: :delete ,data:{confirm:'本当に消去してよろしいですか？'}%></span>
+    </div>
   <% end %>
-</table>
-<p><%= link_to '新規Tweet', new_blog_path%></p>
+<br>
+<br>
+<br>
+<br>
+<p class = "new_post"><%= link_to '新規Tweet', new_blog_path%></p>

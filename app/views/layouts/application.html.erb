@@ -10,6 +10,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class = "container">
+      <header>
+        <p class = "head_to_index"><%= link_to 'Home', blogs_path%></p>
+      </header>
+      <%= yield %>
+      <footer>
+      </footer>
+    </div>
   </body>
 </html>
