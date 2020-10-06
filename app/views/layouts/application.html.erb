@@ -12,10 +12,11 @@
   <body>
     <div class = "container">
       <header>
-        <p class = "head_to_index"><%= link_to 'Home', blogs_path%></p>
+        <%= link_to 'Home', blogs_path%>
       </header>
       <%= yield %>
       <footer>
+        <%= link_to 'Home', blogs_path%>
       </footer>
     </div>
   </body>
