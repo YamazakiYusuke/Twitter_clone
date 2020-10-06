@@ -78,3 +78,10 @@ footer{
 .confirm_content{
   font-size: 1.5rem;
 }
+.form_error{
+  font-size: 2rem;
+  width: 100%;
+}
+#error_explanation{
+  width: 100%;
+}

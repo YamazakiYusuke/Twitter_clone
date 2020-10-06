@@ -2,10 +2,10 @@
   <div class = "container">
     <% if @blog.errors.any? %>
       <div id="error_explanation">
-        <h2><%= @blog.errors.count %>件のエラーがあります。</h2>
+        <h2 class="form_error"><%= @blog.errors.count %>件のエラーがあります。</h2>
         <ul>
         <% @blog.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
+          <li class="form_error"><%= msg %></li>
         <% end %>
         </ul>
       </div>
