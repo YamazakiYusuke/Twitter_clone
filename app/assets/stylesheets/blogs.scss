@@ -9,21 +9,27 @@
 .tweet_container{
   width: 70%;
 }
-.content{
+.index_content{
   // background-color: blanchedalmond;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 2rem;
+  word-wrap: break-word;
+  max-height: 4rem;
 }
 .root{
   display: inline-block;
   // background-color: black;
   width: 100%;
+  margin-top: 1rem;
   margin-bottom: 10px;
   color: white;
 }
-.root span{
+.root a{
   width: 100%;
   font-size: 1.5rem;
+  text-decoration: none;
+  color: antiquewhite;
+  margin-left: 1rem;
 }
 .new_post{
   margin-left: auto;
@@ -33,6 +39,8 @@
 .new_post a{
   font-size: 2rem;
   width: 50%;
+  text-decoration: none;
+  color: antiquewhite;
 }
 h1{
   margin-left: auto;
@@ -53,6 +61,9 @@ h1{
 }
 .show_link a{
   font-size: 2rem;
+  text-decoration: none;
+  color: antiquewhite;
+  
 }
 .show_title{
   font-size: 2rem;
